@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.get("/api/contacts", (req, res) => {
-    res.json({message: "Get All Contacts."});
+    res.status(200).json({message: "Get All Contacts."});
 });
 
 app.listen(port, () => {
