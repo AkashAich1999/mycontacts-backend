@@ -3,6 +3,7 @@ const getContacts = (req, res) => {
 }
 
 const createContact = (req, res) => {
+    console.log("The Request Body is: ", req.body);
     res.status(201).json({message: "Create Contact."});
 }
 
